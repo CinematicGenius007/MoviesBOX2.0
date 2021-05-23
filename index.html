@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+
+		<!-- Important meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- logo and title -->
+		<link rel="shortcut icon" type="image/x-icon" href="static/browser-logo.ico">
+		<title>MoviesBOX</title>
+
+		<!-- External JS -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- <script type="text/javascript" src="js/bootsrapJs/bootstrap.min.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap StyleSheets -->
+		<!-- <link rel="stylesheet" type="text/css" href="stylesheets/bootstrapCss/bootstrap.min.css"> -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Web Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&family=B612&&family=Oswald&family=Abril+Fatface&family=Anton&family=KoHo&&family=Poppins&family=Monoton&display=swap" rel="stylesheet">
+
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/root.css">
+
+		
+
+	</head>
+
+
+
+	<body>
+
+		<div id="body-container" class="container-fluid bg-dark text-white">
+			
+			<div id="initial-page-loader" class="display-1">MoviesBOX</div>
+
+			<!-- <div class="navbar navbar-fixed-top">
+				<div class="container" style="justify-content: center;">
+					<div class="navbar-header clearfix">
+						<a class="navbar-brand text-center" href="index.html">
+							<img id="site-logo" src="static/logo.png">
+						</a>
+					</div>
+				</div>
+			</div> -->
+
+			<div style="background-color: #0a0c18;/*background-image: url('../static/nav-background.jpg'); background-size: cover;	background-repeat: no-repeat; background-position: center;*/">
+				<div style="display: none;text-align: right;">
+					<button id="nav-menu" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+						<i class="fas fa-bars"></i>
+					</button>
+
+					<!-- bootstrap offCanvas -->
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+						<div class="offcanvas-header">
+							<h5 id="offcanvasRightLabel">MoviesBOX</h5>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+						    	<svg viewBox="0 0 24 24">
+						    		<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+						    	</svg>
+							</button>
+						</div>
+						<div class="offcanvas-body">
+						...
+						</div>
+					</div>
+				</div>
+					
+				<div id="nav" class="container-fluid">
+					
+					<div id="searchbar-logo-container">
+						<button class="btn btn-default nav-top-button">
+							<!-- <span class="nav-svg-wrapper">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 416.979 416.979;/* stroke: green; */fill: white;background: #0a0c18;" xml:space="preserve" class="__web-inspector-hide-shortcut__">
+									<path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M40,41H16c-1.104,0-2-0.896-2-2s0.896-2,2-2  h24c1.104,0,2,0.896,2,2S41.104,41,40,41z M40,30H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,30,40,30z   M40,19H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,19,40,19z" style="&#10;    /* stroke: green; */&#10;"/>
+								</svg>
+							</span> -->
+							MENU
+						</button>
+						<a href="index.html">
+							<div id="logo-logo">
+								<span id="logo-part1">Movies</span>
+								<span id="logo-part2">BOX</span>
+							</div>
+						</a>
+						<button class="btn btn-default nav-top-button">
+							<!-- <span class="nav-svg-wrapper">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 416.979 416.979" style="enable-background:new 0 0 416.979 416.979;/* stroke: green; */fill: white;background: #0a0c18;" xml:space="preserve">
+									<g>
+										<path d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85   c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786   c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576   c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765   c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z"/>
+									</g>
+								</svg>
+							</span> -->
+							ABOUT
+						</button>
+					</div>
+					<div id="form-element-container" class="bg-dark">
+						<div class="dropdown seachbar-el">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-filter-value="" aria-haspopup="true" aria-expanded="false" onclick="checkAfterEl()">
+								All
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<li><a class="dropdown-item" href="#" data-filter-value="" data-filter-current="true" onclick="changeDropDownValue(this)"><i class="fas fa-search"></i>All</a></li>
+								<li><a class="dropdown-item" href="#" data-filter-value="movie" data-filter-current="false" onclick="changeDropDownValue(this)"><i class="fas fa-video"></i>Movies</a></li>
+								<li><a class="dropdown-item" href="#" data-filter-value="series" data-filter-current="false" onclick="changeDropDownValue(this)"><i class="fas fa-tv"></i>TV Series</a></li>
+							</ul>
+						</div>
+						<input autocomplete="off" type="text" id="searchText" class="seachbar-el form-control" name="movieInput" placeholder="Search your favorite content" minlength="1" />
+						<button id="searchbar-button" type="button" class="seachbar-el btn">
+							<svg height="20" role="img" width="20" viewBox="0 0 512 512" class="_08f8133e4f703ce562826348eb158f87-scss" aria-hidden="true">
+									<path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor"></path>
+								</svg>
+						</button>							
+					</div>
+					
+				</div>
+			</div>
+
+			<div id="root"></div>
+
+			<div id="footer"></div>
+
+			<!-- local js files -->
+			<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+			<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+			<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+			<script type="text/javascript" src="js/content.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
+
+		</div>
+
+	</body>
+
+</html>
